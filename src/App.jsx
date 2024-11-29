@@ -1,4 +1,5 @@
 import GridLinkItem from "./components/GridLinkItem";
+import InstagramBlock from "./components/InstagramBlock";
 import LinkButton from "./components/LinkButton";
 import ProfileSection from "./components/ProfileSection";
 
@@ -16,6 +17,7 @@ function App() {
 				<GridLinkItem />
 				<GridLinkItem />
 			</div>
+			<InstagramBlock />
 		</div>
 	);
 }
