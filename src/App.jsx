@@ -1,5 +1,4 @@
-import { RiChatHeartLine } from "@remixicon/react";
-import Icon, { ICON_COLOR } from "./components/Icon";
+import CheerLink from "./components/CheerLink";
 import InstagramBlock from "./components/InstagramBlock";
 import LinkButton from "./components/LinkButton";
 import ProfileSection from "./components/ProfileSection";
@@ -11,19 +10,10 @@ function App() {
 		<div className="flex flex-col gap-8 justify-between px-4 pt-16 pb-4">
 			<ProfileSection />
 			<div className="flex flex-col gap-4 w-full h-full">
-				<LinkButton
-					outerLink="https://rollingpaper.site/rolls/1067289"
-					icon={
-						<Icon>
-							<RiChatHeartLine color={ICON_COLOR} />
-						</Icon>
-					}
-				>
-					응원하기
-				</LinkButton>
 				<LinkButton>hi</LinkButton>
 			</div>
 			<TwoByTwoSection />
+			<CheerLink />
 			<InstagramBlock />
 			<YoutubeBlock />
 		</div>
