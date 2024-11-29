@@ -2,6 +2,7 @@ import GridLinkItem from "./components/GridLinkItem";
 import InstagramBlock from "./components/InstagramBlock";
 import LinkButton from "./components/LinkButton";
 import ProfileSection from "./components/ProfileSection";
+import YoutubeBlock from "./components/YoutubeBlock";
 
 function App() {
 	return (
@@ -18,6 +19,7 @@ function App() {
 				<GridLinkItem />
 			</div>
 			<InstagramBlock />
+			<YoutubeBlock />
 		</div>
 	);
 }
