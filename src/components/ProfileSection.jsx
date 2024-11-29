@@ -15,7 +15,7 @@ const ProfileSection = () => {
 				</div>
 			</div>
 			<div className="flex flex-col gap-0.5 items-center">
-				<quote className="text-sm font-hambak">
+				<quote className="text-base font-hambak">
 					“그는 나보다 옳도다”의 고백
 				</quote>
 				<span className="text-sm">2025 큐지컬</span>
