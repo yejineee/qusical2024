@@ -66,4 +66,8 @@
 		font-display: swap;
 		src: url("font/Pretendard-Black.subset.woff2") format("woff2");
 	}
+#root {
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(#F6E6CB,#E7D4B5, #A0937D);
 }
