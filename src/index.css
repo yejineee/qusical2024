@@ -75,7 +75,7 @@
 	}
 }
 #root {
-  width: 100vw;
-  height: 100vh;
-  background: radial-gradient(#F6E6CB,#E7D4B5, #A0937D);
+	width: 100vw;
+	height: 100%;
+	background: radial-gradient(#f6e6cb, #e7d4b5, #a0937d);
 }
