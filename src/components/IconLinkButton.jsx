@@ -1,5 +1,3 @@
-import Icon from "./Icon";
-
 function IconLinkButton({ url, children }) {
 	const handleClick = () => {
 		if (!url) return;
@@ -11,7 +9,7 @@ function IconLinkButton({ url, children }) {
 			className="flex justify-center items-center p-1"
 			onClick={handleClick}
 		>
-			<Icon>{children}</Icon>
+			{children}
 		</button>
 	);
 }
