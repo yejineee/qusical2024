@@ -7,6 +7,7 @@ export default {
 		extend: {
 			fontFamily: {
 				sans: ["Pretendard", ...defaultTheme.fontFamily.sans],
+				hambak: ["hambak"],
 			},
 		},
 	},
