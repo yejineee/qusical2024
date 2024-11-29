@@ -17,7 +17,7 @@ const ProfileSection = () => {
 					></img>
 				</div>
 			</div>
-			<div>2025 큐지컬</div>
+			<div className="text-sm">2025 큐지컬</div>
 		</div>
 	);
 };
