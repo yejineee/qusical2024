@@ -45,9 +45,13 @@ function InstagramBottomSection() {
 					<span className="font-serif">@</span>
 					the.daejangbu
 				</div>
-				<button className="px-4 py-3 font-semibold text-neutral-100 rounded-3xl bg-stone-800 min-w-[48px]">
+				<a
+					className="px-4 py-3 font-semibold text-neutral-100 rounded-3xl bg-stone-800 min-w-[48px]"
+					href="https://www.instagram.com/the.daejangbu/"
+					target="_blank"
+				>
 					Follow
-				</button>
+				</a>
 			</div>
 		);
 	}
