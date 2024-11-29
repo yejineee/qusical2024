@@ -4,28 +4,31 @@
 
 @layer base {
 	@font-face {
-		font-family: "Pretendard-Thin";
+		font-family: "Pretendard";
 		font-style: normal;
 		font-weight: 100;
 		font-display: swap;
 		src: url("font/Pretendard-Thin.subset.woff2") format("woff2");
 	}
 	@font-face {
-		font-family: "Pretendard-ExtraLight";
+		font-family: "Pretendard";
+
 		font-style: normal;
 		font-weight: 200;
 		font-display: swap;
 		src: url("font/Pretendard-ExtraLight.subset.woff2") format("woff2");
 	}
 	@font-face {
-		font-family: "Pretendard-Light";
+		font-family: "Pretendard";
+
 		font-style: normal;
 		font-weight: 300;
 		font-display: swap;
 		src: url("font/Pretendard-Light.subset.woff2") format("woff2");
 	}
 	@font-face {
-		font-family: "Pretendard-Regular";
+		font-family: "Pretendard";
+
 		font-style: normal;
 		font-weight: 400;
 		font-display: swap;
@@ -39,28 +42,32 @@
 		src: url("font/Pretendard-Medium.subset.woff2") format("woff2");
 	}
 	@font-face {
-		font-family: "Pretendard-SemiBold";
+		font-family: "Pretendard";
+
 		font-style: normal;
 		font-weight: 600;
 		font-display: swap;
 		src: url("font/Pretendard-SemiBold.subset.woff2") format("woff2");
 	}
 	@font-face {
-		font-family: "Pretendard-Bold";
+		font-family: "Pretendard";
+
 		font-style: normal;
 		font-weight: 700;
 		font-display: swap;
 		src: url("font/Pretendard-Bold.subset.woff2") format("woff2");
 	}
 	@font-face {
-		font-family: "Pretendard-ExtraBold";
+		font-family: "Pretendard";
+
 		font-style: normal;
 		font-weight: 800;
 		font-display: swap;
 		src: url("font/Pretendard-ExtraBold.subset.woff2") format("woff2");
 	}
 	@font-face {
-		font-family: "Pretendard-Black";
+		font-family: "Pretendard";
+
 		font-style: normal;
 		font-weight: 900;
 		font-display: swap;
