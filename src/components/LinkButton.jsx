@@ -8,10 +8,10 @@ function LinkButton({ children, outerLink, icon }) {
 	if (icon) {
 		return (
 			<button
-				className="flex justify-center items-center px-4 w-full h-12 bg-white rounded-3xl shadow-md"
+				className="flex relative justify-center items-center px-4 w-full h-12 bg-white rounded-3xl shadow-md"
 				onClick={onClick}
 			>
-				<div className="absolute left-8 w-6 h-6">{icon}</div>
+				<div className="absolute left-4 w-6 h-6">{icon}</div>
 				<div>{children}</div>
 			</button>
 		);
