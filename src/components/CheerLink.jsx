@@ -1,4 +1,4 @@
-import { RiChatHeartLine } from "@remixicon/react";
+import { RiChatHeartLine } from "react-icons/ri";
 import Icon, { ICON_COLOR } from "./Icon";
 import LinkButton from "./LinkButton";
 
@@ -8,7 +8,7 @@ const CheerLink = () => {
 			outerLink="https://rollingpaper.site/rolls/1067289"
 			icon={
 				<Icon>
-					<RiChatHeartLine color={ICON_COLOR} />
+					<RiChatHeartLine size={24} color={ICON_COLOR} />
 				</Icon>
 			}
 		>

@@ -1,4 +1,4 @@
-import { RiInstagramFill } from "@remixicon/react";
+import { RiInstagramFill } from "react-icons/ri";
 import { twMerge } from "tailwind-merge";
 import BlockContainer from "./BlockContainer";
 import Icon, { ICON_COLOR } from "./Icon";
@@ -26,7 +26,7 @@ function InstagramTitleSection() {
 	return (
 		<div className="flex items-center">
 			<Icon>
-				<RiInstagramFill color={ICON_COLOR} />
+				<RiInstagramFill size={24} color={ICON_COLOR} />
 			</Icon>
 			<div className="text-lg font-medium">Instagram</div>
 		</div>

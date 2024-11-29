@@ -1,4 +1,4 @@
-import { RiYoutubeFill } from "@remixicon/react";
+import { RiYoutubeFill } from "react-icons/ri";
 import BlockContainer from "./BlockContainer";
 import Icon, { ICON_COLOR } from "./Icon";
 
@@ -28,7 +28,7 @@ function TitleSection() {
 	return (
 		<div className="flex items-center">
 			<Icon>
-				<RiYoutubeFill color={ICON_COLOR} />
+				<RiYoutubeFill size={24} color={ICON_COLOR} />
 			</Icon>
 			<div className="text-lg font-medium">Youtube</div>
 		</div>
