@@ -2,7 +2,7 @@ import BlockContainer from "./BlockContainer";
 
 function YoutubeBlock() {
 	return (
-		<BlockContainer className="mt-8">
+		<BlockContainer>
 			<TitleSection />
 			<div className="my-4">
 				<iframe
