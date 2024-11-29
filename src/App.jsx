@@ -9,13 +9,10 @@ function App() {
 	return (
 		<div className="flex flex-col gap-8 justify-between px-4 pt-16 pb-4">
 			<ProfileSection />
-			<div className="flex flex-col gap-4 w-full h-full">
-				<LinkButton>hi</LinkButton>
-			</div>
 			<TwoByTwoSection />
-			<CheerLink />
-			<InstagramBlock />
 			<YoutubeBlock />
+			<InstagramBlock />
+			<CheerLink />
 		</div>
 	);
 }
