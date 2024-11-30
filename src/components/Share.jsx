@@ -45,7 +45,7 @@ const Share = forwardRef(function Share(_, profileRef) {
 			<button
 				onClick={handleClick}
 				className={twJoin(
-					"p-2 bg-opacity-60 rounded-full transition-opacity duration-300 bg-stone-500",
+					"p-3 bg-opacity-60 rounded-full transition-opacity duration-300 bg-stone-500",
 					isVisible ? "opacity-100" : "opacity-0",
 				)}
 			>
