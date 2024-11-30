@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import { forwardRef } from "react";
-import { useRef } from "react";
 import { useState } from "react";
 import { RiShare2Line } from "react-icons/ri";
 import { twJoin } from "tailwind-merge";
@@ -45,7 +44,7 @@ const Share = forwardRef(function Share(_, profileRef) {
 			<button
 				onClick={handleClick}
 				className={twJoin(
-					"p-3 bg-opacity-60 rounded-full transition-opacity duration-300 bg-stone-500",
+					"p-3 bg-opacity-30 rounded-full transition-opacity duration-300 bg-brown focus:border focus:border-stone-500",
 					isVisible ? "opacity-100" : "opacity-0",
 				)}
 			>

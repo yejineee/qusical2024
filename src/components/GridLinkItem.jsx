@@ -3,7 +3,7 @@ import BlockContainer from "./BlockContainer";
 function GridLinkItem({ subtitle, children }) {
 	return (
 		<BlockContainer className="flex flex-col gap-4 p-2">
-			<div className="flex flex-col justify-center items-center p-4 w-full h-full text-sm rounded-2xl bg-stone-800">
+			<div className="flex flex-col justify-center items-center p-4 w-full h-full text-sm rounded-2xl bg-brown">
 				<img
 					src="/image/img1.jpg"
 					className="object-cover w-16 h-16 rounded-full"
