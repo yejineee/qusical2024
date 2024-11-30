@@ -41,11 +41,11 @@ const Share = forwardRef(function Share(_, profileRef) {
 	}
 
 	return (
-		<div className="fixed top-0 right-0 left-0 px-2 pt-4 mr-auto ml-auto max-w-screen-sm">
+		<div className="flex fixed top-0 right-0 left-0 justify-end px-2 pt-4 mr-auto ml-auto max-w-screen-sm">
 			<button
 				onClick={handleClick}
 				className={twJoin(
-					"flex justify-self-end p-2 bg-opacity-60 rounded-full transition-opacity duration-300  bg-stone-500",
+					"p-2 bg-opacity-60 rounded-full transition-opacity duration-300 bg-stone-500",
 					isVisible ? "opacity-100" : "opacity-0",
 				)}
 			>
