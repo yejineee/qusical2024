@@ -1,18 +1,18 @@
-import { PiInstagramLogo, PiLink, PiYoutubeLogo } from "react-icons/pi";
+import { SlHome, SlSocialInstagram, SlSocialYoutube } from "react-icons/sl";
 import { ICON_COLOR } from "./Icon";
 import IconLinkButton from "./IconLinkButton";
 
 function LinkSection() {
 	return (
-		<div className="flex gap-4 justify-center">
+		<div className="flex gap-8 justify-center">
 			<IconLinkButton url="https://www.instagram.com/the.daejangbu/">
-				<PiInstagramLogo size="32" color={ICON_COLOR} />
+				<SlSocialInstagram size="28" color={ICON_COLOR} />
 			</IconLinkButton>
 			<IconLinkButton url="https://www.youtube.com/playlist?list=PLvn_5y4iSsmwTw6U4gEi532Ld7kj-Hc-W">
-				<PiYoutubeLogo size="32" color={ICON_COLOR} />
+				<SlSocialYoutube size="28" color={ICON_COLOR} />
 			</IconLinkButton>
 			<IconLinkButton url="https://woori.cc/">
-				<PiLink size="32" color={ICON_COLOR} />
+				<SlHome size="28" color={ICON_COLOR} />
 			</IconLinkButton>
 		</div>
 	);
