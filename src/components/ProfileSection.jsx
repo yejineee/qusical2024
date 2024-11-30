@@ -1,10 +1,11 @@
 import React from "react";
+import { forwardRef } from "react";
 import PROFILE_IMAGE from "/image/profile.png";
 import CertifiedIcon from "./icon/CertifiedIcon";
 
-const ProfileSection = () => {
+const ProfileSection = forwardRef(function ProfileSection(_, ref) {
 	return (
-		<div className="flex flex-col items-center">
+		<div ref={ref} className="flex flex-col items-center">
 			<div className="mb-4">
 				<img src={PROFILE_IMAGE} width={96} height={96}></img>
 			</div>
@@ -15,11 +16,11 @@ const ProfileSection = () => {
 				</div>
 			</div>
 			<div className="flex flex-col gap-0.5 items-center">
-				<quote className="font-hambak">“그는 나보다 옳도다”의 고백</quote>
+				<div className="font-hambak">"그는 나보다 옳도다"의 고백</div>
 				<span className="text-sm">2025 큐지컬</span>
 			</div>
 		</div>
 	);
-};
+});
 
 export default ProfileSection;
