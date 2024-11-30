@@ -17,7 +17,8 @@ const ProfileSection = forwardRef(function ProfileSection(_, ref) {
 			</div>
 			<div className="flex flex-col gap-0.5 items-center">
 				<div className="font-hambak">"그는 나보다 옳도다"의 고백</div>
-				<span className="text-sm">2025 큐지컬</span>
+				<span className="text-sm">우리들교회 판교채플</span>
+				<span className="text-sm">2025.01.08, 2025.01.11</span>
 			</div>
 		</div>
 	);
