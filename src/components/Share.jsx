@@ -40,7 +40,7 @@ const Share = forwardRef(function Share(_, profileRef) {
 	}
 
 	return (
-		<div className="flex fixed top-0 right-0 left-0 justify-end px-2 pt-4 mr-auto ml-auto max-w-screen-sm">
+		<div className="fixed top-0 left-0 right-0 flex justify-end max-w-screen-sm px-2 pt-4 ml-auto mr-auto">
 			<button
 				onClick={handleClick}
 				className={twJoin(
