@@ -12,7 +12,7 @@
 	"javascript": { "formatter": { "quoteStyle": "double" } },
 	"overrides": [
 		{
-			"include": ["**/*.{js,jsx}"],
+			"include": ["./src/**/*.{js,jsx,ts,tsx}"],
 			"javascript": {
 				"globals": [
 					"onscrollend",
@@ -211,7 +211,7 @@
 			}
 		},
 		{
-			"include": ["**/*.{js,jsx}"],
+			"include": ["./src/**/*.{js,jsx,ts,tsx}"],
 			"javascript": {
 				"globals": [
 					"onscrollend",
