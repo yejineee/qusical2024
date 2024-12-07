@@ -1,0 +1,31 @@
+{
+	"compilerOptions": {
+		/* Base Options: */
+		"esModuleInterop": true,
+		// `.d.ts` 파일에 대한 타입 검사를 건너뛰도록 설정
+		"skipLibCheck": true,
+		// 타겟팅하는 자바스크립트 버전
+		"target": "es2022",
+		"allowJs": true,
+		"resolveJsonModule": true,
+		"moduleDetection": "force",
+		"isolatedModules": true,
+		// import type과 export type 사용을 강제함
+		"verbatimModuleSyntax": true,
+
+		/* Strictness */
+		"strict": true,
+		"noUncheckedIndexedAccess": true,
+		"noImplicitOverride": true,
+
+		/* If NOT transpiling with TypeScript: */
+		"module": "preserve",
+		"noEmit": true,
+
+		/* If your code runs in the DOM: */
+		"lib": ["es2022", "dom", "dom.iterable"],
+
+		"jsx": "react-jsx"
+	},
+	"include": ["src/**/*"]
+}
