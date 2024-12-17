@@ -10,8 +10,8 @@ import YoutubeBlock from "./components/YoutubeBlock";
 function App() {
 	const profileRef = useRef();
 	return (
-		<div className="mr-auto ml-auto max-w-screen-sm">
-			<div className="flex flex-col gap-8 justify-between px-4 py-16 w-full h-full">
+		<div className="max-w-screen-sm ml-auto mr-auto">
+			<div className="flex flex-col justify-between w-full h-full gap-8 px-4 py-12">
 				<Share ref={profileRef} root={profileRef.current} />
 				<ProfileSection ref={profileRef} />
 				<TwoByTwoSection />
