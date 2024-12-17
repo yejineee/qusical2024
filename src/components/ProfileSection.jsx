@@ -1,4 +1,3 @@
-import React from "react";
 import { forwardRef } from "react";
 import PROFILE_IMAGE from "/image/profile.png";
 import CertifiedIcon from "./icon/CertifiedIcon";

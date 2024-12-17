@@ -25,7 +25,13 @@
 		/* If your code runs in the DOM: */
 		"lib": ["es2022", "dom", "dom.iterable"],
 
-		"jsx": "react-jsx"
+		"jsx": "react-jsx",
+
+		/* path aliases */
+		"baseUrl": "./",
+		"paths": {
+			"~/*": ["src/*"]
+		}
 	},
 	"include": ["src/**/*"]
 }
