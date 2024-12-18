@@ -11,9 +11,37 @@
 // Import Routes
 
 import { Route as rootRoute } from './routes/__root'
+import { Route as StoryImport } from './routes/story'
+import { Route as RelationImport } from './routes/relation'
+import { Route as DaejangbuImport } from './routes/daejangbu'
+import { Route as ContentsImport } from './routes/contents'
 import { Route as IndexImport } from './routes/index'
 
 // Create/Update Routes
+
+const StoryRoute = StoryImport.update({
+  id: '/story',
+  path: '/story',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const RelationRoute = RelationImport.update({
+  id: '/relation',
+  path: '/relation',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const DaejangbuRoute = DaejangbuImport.update({
+  id: '/daejangbu',
+  path: '/daejangbu',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const ContentsRoute = ContentsImport.update({
+  id: '/contents',
+  path: '/contents',
+  getParentRoute: () => rootRoute,
+} as any)
 
 const IndexRoute = IndexImport.update({
   id: '/',
@@ -32,6 +60,34 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexImport
       parentRoute: typeof rootRoute
     }
+    '/contents': {
+      id: '/contents'
+      path: '/contents'
+      fullPath: '/contents'
+      preLoaderRoute: typeof ContentsImport
+      parentRoute: typeof rootRoute
+    }
+    '/daejangbu': {
+      id: '/daejangbu'
+      path: '/daejangbu'
+      fullPath: '/daejangbu'
+      preLoaderRoute: typeof DaejangbuImport
+      parentRoute: typeof rootRoute
+    }
+    '/relation': {
+      id: '/relation'
+      path: '/relation'
+      fullPath: '/relation'
+      preLoaderRoute: typeof RelationImport
+      parentRoute: typeof rootRoute
+    }
+    '/story': {
+      id: '/story'
+      path: '/story'
+      fullPath: '/story'
+      preLoaderRoute: typeof StoryImport
+      parentRoute: typeof rootRoute
+    }
   }
 }
 
@@ -39,32 +95,52 @@ declare module '@tanstack/react-router' {
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/contents': typeof ContentsRoute
+  '/daejangbu': typeof DaejangbuRoute
+  '/relation': typeof RelationRoute
+  '/story': typeof StoryRoute
 }
 
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/contents': typeof ContentsRoute
+  '/daejangbu': typeof DaejangbuRoute
+  '/relation': typeof RelationRoute
+  '/story': typeof StoryRoute
 }
 
 export interface FileRoutesById {
   __root__: typeof rootRoute
   '/': typeof IndexRoute
+  '/contents': typeof ContentsRoute
+  '/daejangbu': typeof DaejangbuRoute
+  '/relation': typeof RelationRoute
+  '/story': typeof StoryRoute
 }
 
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths: '/' | '/contents' | '/daejangbu' | '/relation' | '/story'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/contents' | '/daejangbu' | '/relation' | '/story'
+  id: '__root__' | '/' | '/contents' | '/daejangbu' | '/relation' | '/story'
   fileRoutesById: FileRoutesById
 }
 
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ContentsRoute: typeof ContentsRoute
+  DaejangbuRoute: typeof DaejangbuRoute
+  RelationRoute: typeof RelationRoute
+  StoryRoute: typeof StoryRoute
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ContentsRoute: ContentsRoute,
+  DaejangbuRoute: DaejangbuRoute,
+  RelationRoute: RelationRoute,
+  StoryRoute: StoryRoute,
 }
 
 export const routeTree = rootRoute
@@ -77,11 +153,27 @@ export const routeTree = rootRoute
     "__root__": {
       "filePath": "__root.tsx",
       "children": [
-        "/"
+        "/",
+        "/contents",
+        "/daejangbu",
+        "/relation",
+        "/story"
       ]
     },
     "/": {
       "filePath": "index.tsx"
+    },
+    "/contents": {
+      "filePath": "contents.tsx"
+    },
+    "/daejangbu": {
+      "filePath": "daejangbu.tsx"
+    },
+    "/relation": {
+      "filePath": "relation.tsx"
+    },
+    "/story": {
+      "filePath": "story.tsx"
     }
   }
 }
