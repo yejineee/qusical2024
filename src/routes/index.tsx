@@ -3,9 +3,9 @@ import { useRef } from "react";
 import CheerLink from "~/components/CheerLink";
 import InstagramBlock from "~/components/InstagramBlock";
 import LinkSection from "~/components/LinkSection";
+import MenuSection from "~/components/MenuSection";
 import ProfileSection from "~/components/ProfileSection";
 import Share from "~/components/Share";
-import MenuSection from "~/components/MenuSection";
 import YoutubeBlock from "~/components/YoutubeBlock";
 
 export const Route = createFileRoute("/")({

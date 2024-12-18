@@ -1,10 +1,5 @@
-import {
-	useEffect,
-	type ForwardedRef,
-	type MutableRefObject,
-	type Ref,
-} from "react";
-import { forwardRef } from "react";
+import { type MutableRefObject, useEffect } from "react";
+
 import { useState } from "react";
 import { RiShare2Line } from "react-icons/ri";
 import { twJoin } from "tailwind-merge";

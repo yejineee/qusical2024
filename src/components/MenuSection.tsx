@@ -1,5 +1,5 @@
-import { SlDiamond, SlList, SlMusicToneAlt, SlPeople } from "react-icons/sl";
 import { Link, type LinkProps } from "@tanstack/react-router";
+import { SlDiamond, SlList, SlMusicToneAlt, SlPeople } from "react-icons/sl";
 import { ICON_COLOR } from "./Icon";
 
 import BlockContainer from "./BlockContainer";
