@@ -1,4 +1,9 @@
-import { useEffect } from "react";
+import {
+	useEffect,
+	type ForwardedRef,
+	type MutableRefObject,
+	type Ref,
+} from "react";
 import { forwardRef } from "react";
 import { useState } from "react";
 import { RiShare2Line } from "react-icons/ri";
@@ -10,11 +15,13 @@ const data = {
 	url: URL.HOME,
 };
 
-function Share(_, profileRef) {
+interface Props {
+	profileRef: MutableRefObject<HTMLDivElement | undefined> | null;
+}
+export default function Share({ profileRef }: Props) {
 	const [isVisible, setIsVisible] = useState(true);
-
 	useEffect(() => {
-		if (!profileRef.current) return;
+		if (!profileRef || !profileRef.current) return;
 		const observer = new IntersectionObserver(
 			(entries) => {
 				entries.forEach((entry) => {
@@ -27,6 +34,7 @@ function Share(_, profileRef) {
 		);
 		observer.observe(profileRef.current);
 		return () => {
+			if (!profileRef.current) return;
 			observer.unobserve(profileRef.current);
 		};
 	}, [profileRef]);
@@ -53,5 +61,3 @@ function Share(_, profileRef) {
 		</div>
 	);
 }
-
-export default forwardRef(Share);
