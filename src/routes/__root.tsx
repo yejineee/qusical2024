@@ -5,7 +5,7 @@ export const Route = createRootRoute({
 	component: () => (
 		<div className="max-w-screen-sm px-4 py-12 ml-auto mr-auto">
 			<Outlet />
-			<TanStackRouterDevtools />
+			{import.meta.env.DEV && <TanStackRouterDevtools />}
 		</div>
 	),
 });
