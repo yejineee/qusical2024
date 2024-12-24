@@ -2,7 +2,7 @@ import { useRouter } from "@tanstack/react-router";
 
 import { RiArrowLeftLine } from "react-icons/ri";
 
-function SubPageHeader() {
+function SubPageHeader({ title }: { title?: string }) {
 	const router = useRouter();
 
 	const handleClickBack = () => {
@@ -10,11 +10,19 @@ function SubPageHeader() {
 	};
 
 	return (
-		<div className="absolute top-0 max-w-screen-sm px-2 pt-4 ml-auto mr-auto">
-			<button onClick={handleClickBack}>
-				<RiArrowLeftLine size="20" />
-			</button>
-		</div>
+		<>
+			<div className="absolute flex justify-between max-w-screen-sm ml-auto mr-auto top-4 left-4 right-4">
+				<button onClick={handleClickBack}>
+					<RiArrowLeftLine size="20" />
+				</button>
+				{title && (
+					<>
+						<div className="font-semibold text-md">{title}</div>
+						<div></div>
+					</>
+				)}
+			</div>
+		</>
 	);
 }
 

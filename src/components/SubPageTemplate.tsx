@@ -8,13 +8,8 @@ interface Props {
 function SubPageTemplate({ title, children }: Props) {
 	return (
 		<>
-			<SubPageHeader />
-			<article>
-				<div className="flex justify-center mb-8">
-					<h2 className="text-xl font-semibold">{title}</h2>
-				</div>
-				{children}
-			</article>
+			<SubPageHeader title={title} />
+			<article>{children}</article>
 		</>
 	);
 }
