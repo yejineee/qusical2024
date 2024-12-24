@@ -5,7 +5,7 @@ import LinkButton from "./LinkButton";
 const CheerLink = () => {
 	return (
 		<LinkButton
-			outerLink="https://rollingpaper.site/rolls/1067289"
+			outerLink="https://rollingpaper.site/rolls/1074966"
 			icon={
 				<Icon>
 					<RiChatHeartLine size={24} color={ICON_COLOR} />
