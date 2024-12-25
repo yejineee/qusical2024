@@ -7,13 +7,13 @@ function InstagramBlock() {
 	return (
 		<BlockContainer>
 			<InstagramTitleSection />
-			<div className="grid grid-cols-2 gap-x-4 gap-y-4 my-4 grid-flow-dense">
+			<div className="grid grid-cols-2 my-4 gap-x-4 gap-y-4 grid-flow-dense">
 				{/* 1st */}
-				<GridImageItem className="rounded-tl-xl" />
-				<GridImageItem className="rounded-tr-xl" />
+				<GridImageItem className="rounded-tl-xl" src="/image/inst4.jpg" />
+				<GridImageItem className="rounded-tr-xl" src="/image/inst3.jpg" />
 				{/* 2nd */}
-				<GridImageItem className="rounded-bl-xl" />
-				<GridImageItem className="rounded-br-xl" />
+				<GridImageItem className="rounded-bl-xl" src="/image/inst2.jpg" />
+				<GridImageItem className="rounded-br-xl" src="/image/inst1.jpg" />
 			</div>
 			<InstagramBottomSection />
 		</BlockContainer>
@@ -36,7 +36,7 @@ function InstagramTitleSection() {
 function InstagramBottomSection() {
 	{
 		return (
-			<div className="flex justify-between items-center">
+			<div className="flex items-center justify-between">
 				<div>
 					<span className="font-serif">@</span>
 					the.daejangbu
@@ -56,7 +56,7 @@ function InstagramBottomSection() {
 function GridImageItem({ className, src }) {
 	return (
 		<img
-			src={src ?? "/image/img4.jpg"}
+			src={src}
 			className={twMerge(
 				"object-cover w-full h-full rounded-md aspect-square",
 				className,
