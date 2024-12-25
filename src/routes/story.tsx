@@ -7,7 +7,7 @@ export const Route = createFileRoute("/story")({
 function Story() {
 	return (
 		<SubPageTemplate title="줄거리">
-			<div className="px-4">
+			<div className="container-sub">
 				어릴적부터 채색옷을 입으며 아버지의 편애 속에서 자란 요셉은 형제들의
 				시기를 받습니다. 형제들은 요셉을 구덩이에 빠뜨려 죽이려 합니다. 하지만
 				유다의 제안으로 요셉은 가까스로 목숨을 구하고 애굽 상인에게 팔려갑니다.
