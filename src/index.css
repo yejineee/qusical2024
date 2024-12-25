@@ -97,4 +97,11 @@
 	.container-padding {
 		@apply px-4 py-12
 	}
+	.container-sub{
+		@apply px-4 pt-4 pb-12
+	}
+	.list-dot::before {
+			content: "•";
+			margin-right: 0.2rem;
+	}
 }
