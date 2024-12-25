@@ -8,15 +8,17 @@ export const Route = createFileRoute("/daejangbu")({
 
 const Intro = () => (
 	<article>
-		<b className="font-hambak">“너는 힘써 대장부가 되고”</b>
+		<b>“너는 힘써 대장부가 되고”</b>
 		&nbsp;(열왕기상 2:2)
 		<br />
 		<br />
 		극단대장부는 큐지컬(QT+Musical)을 제작하는 우리들교회의 문화사역부서입니다.
 		<br />
+		<br />
 		우리부터 말씀으로 살아나고, 그 은혜를 관객들에게 전하고자 합니다.
 	</article>
 );
+
 function HistoryYoutubeBottom({ url }: { url: string }) {
 	{
 		return (
@@ -98,7 +100,7 @@ const History = () => (
 function Daejangbu() {
 	return (
 		<SubPageTemplate title="극단대장부">
-			<div className="flex flex-col gap-4 container-sub">
+			<div className="flex flex-col gap-8 container-sub">
 				<Intro />
 				<History />
 			</div>
