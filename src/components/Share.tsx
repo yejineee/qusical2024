@@ -43,7 +43,7 @@ export default function Share({ profileRef }: Props) {
 	}
 
 	return (
-		<div className="fixed top-0 left-0 right-0 flex justify-end max-w-screen-sm px-2 pt-4 ml-auto mr-auto">
+		<div className="fixed top-0 left-0 right-0 flex justify-end px-2 pt-4 container-width">
 			<button
 				onClick={handleClick}
 				className={twJoin(

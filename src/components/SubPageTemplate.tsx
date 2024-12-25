@@ -9,7 +9,7 @@ function SubPageTemplate({ title, children }: Props) {
 	return (
 		<>
 			<SubPageHeader title={title} />
-			<article>{children}</article>
+			<div className="pt-12">{children}</div>
 		</>
 	);
 }

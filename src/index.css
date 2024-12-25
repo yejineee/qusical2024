@@ -88,3 +88,13 @@
 	background: radial-gradient(#f6e6cb, #e7d4b5, #a0937d);
 	min-height: 100vh;
 }
+
+@layer components {
+	.container-width {
+		@apply max-w-screen-sm mx-auto
+	}
+
+	.container-padding {
+		@apply px-4 py-12
+	}
+}
