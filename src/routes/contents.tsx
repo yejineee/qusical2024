@@ -27,7 +27,7 @@ function Contents() {
 					<RiInformation2Line />
 					구체적인 시간은 추후 업데이트될 예정입니다.
 				</div>
-				<div className="absolute bottom-0 left-0 right-0 flex items-center justify-center w-full h-full top-4">
+				<div className="flex items-center justify-center w-full h-full pt-32">
 					<ul className="flex flex-col items-center gap-4 font-semibold">
 						{contents.map((content, index) => (
 							<>
