@@ -16,7 +16,7 @@ function Home() {
 	const profileRef = useRef<HTMLDivElement>();
 
 	return (
-		<div className="container-width container-padding">
+		<div className="container-padding">
 			<div className="flex flex-col justify-between w-full h-full gap-8">
 				<Share profileRef={profileRef} />
 				<ProfileSection ref={profileRef} />

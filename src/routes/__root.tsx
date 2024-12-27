@@ -5,7 +5,9 @@ import { Analytics } from "@vercel/analytics/react";
 export const Route = createRootRoute({
 	component: () => (
 		<>
-			<Outlet />
+			<div className="container-width">
+				<Outlet />
+			</div>
 			<Analytics />
 			{import.meta.env.DEV && <TanStackRouterDevtools />}
 		</>
