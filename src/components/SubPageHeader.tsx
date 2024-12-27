@@ -11,7 +11,7 @@ function SubPageHeader({ title }: { title?: string }) {
 
 	return (
 		<>
-			<div className="absolute flex justify-between mr-auto container-width top-4 left-4 right-4">
+			<div className="absolute flex justify-between mr-auto container-width top-4 left-4 lg:left-8 right-4">
 				<button onClick={handleClickBack}>
 					<RiArrowLeftLine size="20" />
 				</button>
