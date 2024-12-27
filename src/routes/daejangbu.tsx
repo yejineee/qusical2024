@@ -64,24 +64,17 @@ const History = () => (
 	<div>
 		<h2 className="pb-4 text-xl font-bold">큐지컬 히스토리</h2>
 		<ul className="flex flex-col gap-4">
-			<HistoryBlock title="시즌1 ‘기업 무르기’ (2018년 1월)">
-				<iframe
-					width="100%"
-					height="100%"
-					src="https://www.youtube.com/embed/h-WADSaff3Q?si=tsZUOsLR9egA3jFb"
-					title="YouTube video player"
-					frameborder="0"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-					referrerpolicy="strict-origin-when-cross-origin"
-					allowfullscreen
-				></iframe>
-			</HistoryBlock>
+			<HistoryBlock
+				title="시즌1 ‘기업 무르기’ (2018년 1월)"
+				img="/image/q1.jpeg"
+				youtubeURL="https://youtu.be/h-WADSaff3Q?si=JJmfZ9bcM4WWGGOo"
+			></HistoryBlock>
 			<HistoryBlock
 				title="시즌2 ‘압살롬의 기념비’ (2019년 1월)"
 				img="/image/q2.jpg"
 				youtubeURL="https://youtu.be/UDU07D2B8lc?si=1cieXGa4VLmysE_7"
 			/>
-			<HistoryBlock title="시즌3 ‘갈멜’ (2020년 1월)" img="/image/q3.jpg" />
+			<HistoryBlock title="시즌3 ‘갈멜’ (2020년 1월)" img="/image/q3.jpeg" />
 			<HistoryBlock
 				title="시즌4 ‘증인’ (2022년 12월)"
 				img="/image/q4.jpeg"
