@@ -8,6 +8,7 @@ export const Route = createFileRoute("/daejangbu")({
 
 const Intro = () => (
 	<article>
+		<SubHeader>극단대장부</SubHeader>
 		<b>“너는 힘써 대장부가 되고”</b>
 		&nbsp;(열왕기상 2:2)
 		<br />
@@ -60,9 +61,13 @@ function HistoryBlock({
 	);
 }
 
+function SubHeader({ children }: { children: React.ReactNode }) {
+	return <h2 className="pb-4 text-xl font-bold">{children}</h2>;
+}
+
 const History = () => (
 	<div>
-		<h2 className="pb-4 text-xl font-bold">큐지컬 히스토리</h2>
+		<SubHeader>큐지컬 히스토리</SubHeader>
 		<ul className="flex flex-col gap-4">
 			<HistoryBlock
 				title="시즌1 ‘기업 무르기’ (2018년 1월)"
