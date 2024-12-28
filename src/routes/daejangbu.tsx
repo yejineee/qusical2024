@@ -41,17 +41,28 @@ function HistoryBlock({
 	title,
 	file,
 	youtubeURL,
+	high,
 }: {
 	title: string;
 	file?: string;
 	youtubeURL?: string;
+	high?: boolean;
 }) {
 	return (
 		<BlockContainer>
 			<div className="flex items-center">
 				<div className="font-semibold text-md">{title}</div>
 			</div>
-			<div className="my-4">{file && <Image file={file} alt={title} />}</div>
+			<div className="my-4">
+				{file && (
+					<Image
+						file={file}
+						alt={title}
+						fetchPriority={high ? "high" : "auto"}
+						loading={high ? "eager" : "lazy"}
+					/>
+				)}
+			</div>
 			{youtubeURL && <HistoryYoutubeBottom url={youtubeURL} />}
 		</BlockContainer>
 	);
@@ -69,6 +80,7 @@ const History = () => (
 				title="시즌1 ‘기업 무르기’ (2018년 1월)"
 				file="q1.jpeg"
 				youtubeURL="https://youtu.be/h-WADSaff3Q?si=JJmfZ9bcM4WWGGOo"
+				high
 			></HistoryBlock>
 			<HistoryBlock
 				title="시즌2 ‘압살롬의 기념비’ (2019년 1월)"
