@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import SubPageTemplate from "~/components/SubPageTemplate";
 import BlockContainer from "~/components/BlockContainer";
+import Image from "~/components/Image";
 
 export const Route = createFileRoute("/daejangbu")({
 	component: Daejangbu,
@@ -38,24 +39,19 @@ function HistoryYoutubeBottom({ url }: { url: string }) {
 
 function HistoryBlock({
 	title,
-	img,
-	children,
+	file,
 	youtubeURL,
 }: {
 	title: string;
-	img?: string;
+	file?: string;
 	youtubeURL?: string;
-	children?: React.ReactNode;
 }) {
 	return (
 		<BlockContainer>
 			<div className="flex items-center">
 				<div className="font-semibold text-md">{title}</div>
 			</div>
-			<div className="my-4">
-				{img && <img src={img} alt={title} />}
-				{children}
-			</div>
+			<div className="my-4">{file && <Image file={file} alt={title} />}</div>
 			{youtubeURL && <HistoryYoutubeBottom url={youtubeURL} />}
 		</BlockContainer>
 	);
@@ -71,26 +67,26 @@ const History = () => (
 		<ul className="flex flex-col gap-4">
 			<HistoryBlock
 				title="시즌1 ‘기업 무르기’ (2018년 1월)"
-				img="/image/q1.jpeg"
+				file="q1.jpeg"
 				youtubeURL="https://youtu.be/h-WADSaff3Q?si=JJmfZ9bcM4WWGGOo"
 			></HistoryBlock>
 			<HistoryBlock
 				title="시즌2 ‘압살롬의 기념비’ (2019년 1월)"
-				img="/image/q2.jpg"
+				file="q2.jpg"
 				youtubeURL="https://youtu.be/UDU07D2B8lc?si=1cieXGa4VLmysE_7"
 			/>
-			<HistoryBlock title="시즌3 ‘갈멜’ (2020년 1월)" img="/image/q3.jpeg" />
+			<HistoryBlock title="시즌3 ‘갈멜’ (2020년 1월)" file="q3.jpeg" />
 			<HistoryBlock
 				title="시즌4 ‘증인’ (2022년 12월)"
-				img="/image/q4.jpeg"
+				file="q4.jpeg"
 				youtubeURL="https://youtu.be/2lc8R_Xsa30?si=dGGQHtreS9Q0MYEE"
 			/>
 			<HistoryBlock
 				title="시즌5 ‘상속자’ (2024년 1월)"
-				img="/image/q5.jpg"
+				file="q5.jpg"
 				youtubeURL="https://youtu.be/N75TlmEqhqs?si=VVJDTbz17Ja5FpJa"
 			/>
-			<HistoryBlock title="시즌6 ‘증인’ (2025년 1월)" img="/image/q6.png" />
+			<HistoryBlock title="시즌6 ‘증인’ (2025년 1월)" file="q6.png" />
 		</ul>
 	</div>
 );
