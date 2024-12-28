@@ -9,7 +9,7 @@ const IMAGE_URL = "https://qusical2025.vercel.app/image/";
 
 function Image({ file, quality = 70, size, ...props }: ImageProps) {
 	const option = encodeURIComponent(
-		`${size ? `C${size}x${size}` : ""}@2x.q${quality}.fwebp`,
+		`${size ? `C${size}x${size}` : ""}@2x.fwebp.q${quality}`,
 	);
 	const filePath = `${IMAGE_URL}${file}`;
 	const src = `${DAUM_CDN}${option}?fname=${filePath}`;
