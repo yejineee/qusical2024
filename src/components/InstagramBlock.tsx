@@ -2,6 +2,7 @@ import { RiInstagramFill } from "react-icons/ri";
 import { twMerge } from "tailwind-merge";
 import BlockContainer from "./BlockContainer";
 import Icon, { ICON_COLOR } from "./Icon";
+import Image from "./Image";
 
 function InstagramBlock() {
 	return (
@@ -9,11 +10,11 @@ function InstagramBlock() {
 			<InstagramTitleSection />
 			<div className="grid grid-cols-2 my-4 gap-x-4 gap-y-4 grid-flow-dense">
 				{/* 1st */}
-				<GridImageItem className="rounded-tl-xl" src="/image/inst4.jpg" />
-				<GridImageItem className="rounded-tr-xl" src="/image/inst3.jpg" />
+				<GridImageItem className="rounded-tl-xl" file="inst4.jpg" />
+				<GridImageItem className="rounded-tr-xl" file="inst3.jpg" />
 				{/* 2nd */}
-				<GridImageItem className="rounded-bl-xl" src="/image/inst2.jpg" />
-				<GridImageItem className="rounded-br-xl" src="/image/inst1.jpg" />
+				<GridImageItem className="rounded-bl-xl" file="inst2.jpg" />
+				<GridImageItem className="rounded-br-xl" file="inst1.jpg" />
 			</div>
 			<InstagramBottomSection />
 		</BlockContainer>
@@ -53,14 +54,18 @@ function InstagramBottomSection() {
 	}
 }
 
-function GridImageItem({ className, src }) {
+function GridImageItem({
+	className,
+	file,
+}: { className?: string; file: string }) {
 	return (
-		<img
-			src={src}
+		<Image
+			file={file}
 			className={twMerge(
 				"object-cover w-full h-full rounded-md aspect-square",
 				className,
 			)}
-		></img>
+			size={280}
+		/>
 	);
 }
