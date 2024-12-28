@@ -7,7 +7,7 @@ interface ImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
 const DAUM_CDN = "//i1.daumcdn.net/thumb/";
 const IMAGE_URL = "https://qusical2025.vercel.app/image/";
 
-function Image({ file, quality = 75, size, ...props }: ImageProps) {
+function Image({ file, quality = 70, size, ...props }: ImageProps) {
 	const option = encodeURIComponent(
 		`${size ? `C${size}x${size}` : ""}@2x.q${quality}.fwebp`,
 	);
