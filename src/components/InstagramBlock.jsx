@@ -9,7 +9,10 @@ function InstagramBlock() {
 			<InstagramTitleSection />
 			<div className="grid grid-cols-2 my-4 gap-x-4 gap-y-4 grid-flow-dense">
 				{/* 1st */}
-				<GridImageItem className="rounded-tl-xl" src="/image/inst4.jpg" />
+				<GridImageItem
+					className="rounded-tl-xl"
+					src="//i1.daumcdn.net/thumb/C280x280/?fname=https://qusical2025.vercel.app/image/inst4.jpg"
+				/>
 				<GridImageItem className="rounded-tr-xl" src="/image/inst3.jpg" />
 				{/* 2nd */}
 				<GridImageItem className="rounded-bl-xl" src="/image/inst2.jpg" />
