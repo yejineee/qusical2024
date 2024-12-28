@@ -11,7 +11,7 @@ function InstagramBlock() {
 				{/* 1st */}
 				<GridImageItem
 					className="rounded-tl-xl"
-					src={`//i1.daumcdn.net/thumb/${encodeURIComponent("C280x280@2x.fwebp")}/?fname=https://qusical2025.vercel.app/image/inst4.jpg`}
+					src={`//i1.daumcdn.net/thumb/${encodeURIComponent("C280x280@2x.q70.fwebp")}/?fname=https://qusical2025.vercel.app/image/inst4.jpg`}
 				/>
 				<GridImageItem className="rounded-tr-xl" src="/image/inst3.jpg" />
 				{/* 2nd */}
