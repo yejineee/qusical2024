@@ -43,11 +43,11 @@ export default function Share({ profileRef }: Props) {
 	}
 
 	return (
-		<div className="fixed top-0 left-0 right-0 flex justify-end px-2 pt-4 container-width">
+		<div className="fixed top-0 left-0 right-0 z-10 flex justify-end px-2 pt-4 sm:pt-8 container-width">
 			<button
 				onClick={handleClick}
 				className={twJoin(
-					"p-3 bg-opacity-30 rounded-full transition-opacity duration-300 bg-brown focus:border focus:border-stone-500",
+					"p-3 bg-opacity-30 rounded-full transition-opacity duration-300 bg-neutral-500 focus:border focus:border-stone-500",
 					isVisible ? "opacity-100" : "opacity-0",
 				)}
 			>

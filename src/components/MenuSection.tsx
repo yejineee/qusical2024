@@ -44,12 +44,8 @@ function MenuSection() {
 			<Menu to="/contents" icon={<SlList size="24" color={ICON_COLOR} />}>
 				공연 순서
 			</Menu>
-			<Menu
-				to="/daejangbu"
-				icon={<SlDiamond size="24" color={ICON_COLOR} />}
-				subtitle="극단대장부"
-			>
-				큐지컬을 만든 사람들
+			<Menu to="/daejangbu" icon={<SlDiamond size="24" color={ICON_COLOR} />}>
+				극단대장부
 			</Menu>
 		</div>
 	);

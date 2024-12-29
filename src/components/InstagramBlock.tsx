@@ -37,7 +37,7 @@ function InstagramTitleSection() {
 function InstagramBottomSection() {
 	{
 		return (
-			<div className="flex items-center justify-between">
+			<div className="flex items-center justify-between w-full">
 				<div>
 					<span className="font-serif">@</span>
 					the.daejangbu
