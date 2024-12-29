@@ -21,9 +21,9 @@ function Home() {
 				<Share profileRef={profileRef} />
 				<ProfileSection ref={profileRef} />
 				<MenuSection />
-				{/* <YoutubeBlock /> */}
-				<InstagramBlock />
 				<CheerLink />
+				<YoutubeBlock />
+				<InstagramBlock />
 				<LinkSection />
 			</div>
 		</div>

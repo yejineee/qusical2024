@@ -10,7 +10,7 @@ function YoutubeBlock() {
 				<iframe
 					width="100%"
 					height="100%"
-					src="https://www.youtube.com/embed/cJSINRz8qck?si=qnsRTsB8uvi6ILpR"
+					src="https://www.youtube.com/embed/MXlcOGuQkFM?si=sQM46y74n_wiTjPt"
 					title="YouTube video player"
 					frameborder="0"
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
