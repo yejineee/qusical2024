@@ -10,7 +10,7 @@ export default {
 			},
 			fontFamily: {
 				sans: ["Pretendard", ...defaultTheme.fontFamily.sans],
-				hambak: ["hambak"],
+				title: ["행복고흥L"],
 			},
 		},
 	},
