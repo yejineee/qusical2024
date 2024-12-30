@@ -7,6 +7,7 @@ import MenuSection from "~/components/MenuSection";
 import ProfileSection from "~/components/ProfileSection";
 import Share from "~/components/Share";
 import YoutubeBlock from "~/components/YoutubeBlock";
+import Time from "~/components/Time";
 
 export const Route = createFileRoute("/")({
 	component: Home,
@@ -20,6 +21,7 @@ function Home() {
 			<Share profileRef={profileRef} />
 			<ProfileSection ref={profileRef} />
 			<div className="flex flex-col w-full h-full gap-8 px-4 py-4 pb-8 sm:px-0">
+				<Time />
 				<MenuSection />
 				<CheerLink />
 				<YoutubeBlock />

@@ -29,7 +29,7 @@ function InstagramTitleSection() {
 			<Icon>
 				<RiInstagramFill size={24} color={ICON_COLOR} />
 			</Icon>
-			<div className="text-lg font-medium">Instagram</div>
+			<div className="block-title">Instagram</div>
 		</div>
 	);
 }

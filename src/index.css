@@ -110,4 +110,8 @@
 		content: "•";
 		margin-right: 0.2rem;
 	}
+
+	.block-title {
+		@apply text-lg font-medium
+	}
 }

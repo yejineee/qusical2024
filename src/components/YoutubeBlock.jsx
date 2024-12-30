@@ -30,7 +30,7 @@ function TitleSection() {
 			<Icon>
 				<RiYoutubeFill size={24} color={ICON_COLOR} />
 			</Icon>
-			<div className="text-lg font-medium">Youtube</div>
+			<div className="block-title">Youtube</div>
 		</div>
 	);
 }
