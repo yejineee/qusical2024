@@ -20,7 +20,7 @@ function Home() {
 		<div className="flex flex-col w-full h-full">
 			<Share profileRef={profileRef} />
 			<ProfileSection ref={profileRef} />
-			<div className="flex flex-col w-full h-full gap-8 px-4 py-4 pb-8 sm:px-0">
+			<div className="flex flex-col w-full h-full gap-8 px-4 py-8 sm:px-0">
 				<Time />
 				<MenuSection />
 				<CheerLink />
