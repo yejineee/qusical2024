@@ -5,7 +5,7 @@ function BlockContainer({
 	children,
 }: { className?: string; children: React.ReactNode }) {
 	return (
-		<div className={twMerge("p-4 bg-white rounded-3xl shadow-md", className)}>
+		<div className={twMerge("p-4 bg-white rounded-xl shadow-md", className)}>
 			{children}
 		</div>
 	);

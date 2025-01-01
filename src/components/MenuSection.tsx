@@ -5,25 +5,21 @@ import { ICON_COLOR } from "./Icon";
 import BlockContainer from "./BlockContainer";
 
 type MenuProps = {
-	subtitle?: string;
 	children: React.ReactNode;
 	icon: React.ReactNode;
 	to: LinkProps["to"];
 };
 
-function Menu({ subtitle, children, icon, to }: MenuProps) {
+function Menu({ children, icon, to }: MenuProps) {
 	return (
 		<Link to={to}>
 			<BlockContainer className="flex flex-col gap-4 p-2">
-				<div className="flex flex-col items-center justify-center w-full h-full p-4 text-sm rounded-2xl bg-brown">
-					<div className="flex items-center justify-center w-16 h-16 bg-white rounded-full">
+				<div className="flex flex-col items-center justify-center w-full h-full p-2 text-sm rounded-2xl">
+					<div className="flex items-center justify-center w-12 h-12 bg-white rounded-full">
 						{icon}
 					</div>
-					<div className="pt-2 font-semibold text-white">
-						{subtitle ?? children}
-					</div>
+					<div className="pt-2 font-semibold">{children}</div>
 				</div>
-				<div className="pb-2 pl-2 text-sm">{children}</div>
 			</BlockContainer>
 		</Link>
 	);

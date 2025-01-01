@@ -23,7 +23,7 @@ function Time() {
 					우리들교회 판교채플
 				</div>
 			</div>
-			<div className="pt-2 ">
+			<div className="pt-2">
 				<DateItem date="2025.01.08 수요일" time="오전 10시, 오후 7시 30분" />
 				<DateItem
 					date="2025.01.11 토요일"

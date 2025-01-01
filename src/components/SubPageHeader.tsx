@@ -11,14 +11,15 @@ function SubPageHeader({ title }: { title?: string }) {
 
 	return (
 		<>
-			<div className="absolute flex justify-between mr-auto container-width top-4 left-4 lg:left-8 right-4">
+			<div className="absolute grid grid-cols-3 grid-rows-1 p-4 container-width">
 				<button onClick={handleClickBack}>
 					<RiArrowLeftLine size="20" />
 				</button>
 				{title && (
 					<>
-						<div className="font-semibold text-md">{title}</div>
-						<div></div>
+						<div className="flex justify-center font-semibold text-md">
+							{title}
+						</div>
 					</>
 				)}
 			</div>
