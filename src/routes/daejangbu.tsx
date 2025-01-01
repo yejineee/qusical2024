@@ -24,6 +24,54 @@ const Intro = () => (
 	</article>
 );
 
+const staff = {
+	사역자: "김오석 김평화",
+	연출: "이경두",
+	// 작가: "서나은 박혜령",
+	본부: "김용희 박하진",
+	운영: "송기호 심영보 맹우진 성기현",
+	안무: "신은정 문희준 김재우",
+	의상: "송다인 유서연 신은수 변예린",
+	영상: "김찬희 오혜명 김환희 박지인 김예은",
+	마케팅: "양예진 오승희 윤혜서 김미정",
+	디자인: "윤혜령 김병욱 권순찬 최지연 김아영 이한별 김연두",
+	"무대/소품": "조은상 이동엽 전수현 김영민 이정현 이유성 임예림",
+};
+
+const actor = {
+	배우: `이경두 김대현 임현명 홍정인 최일웅 나희영 박경찬
+김재우 박승주 전병훈 박예찬 박현지 김이영 신은정
+문희준 서나은 박하진 김찬희 오유진
+`,
+};
+
+const Actor = () => {
+	return (
+		<article>
+			<SubHeader>큐지컬 {"<유다>"} 배우</SubHeader>
+			<BlockContainer className="text-lg break-keep">
+				<div>{actor.배우}</div>
+			</BlockContainer>
+		</article>
+	);
+};
+
+const Staff = () => {
+	return (
+		<article>
+			<SubHeader>큐지컬 {"<유다>"} 스태프</SubHeader>
+			<BlockContainer className="flex flex-col gap-1 text-lg divide-y break-keep">
+				{Object.entries(staff).map(([role, names]) => (
+					<div key={role} className="grid grid-cols-4 p-1">
+						<b className="col-span-1">{role}</b>
+						<div className="col-start-2 col-span-full">{names}</div>
+					</div>
+				))}
+			</BlockContainer>
+		</article>
+	);
+};
+
 function HistoryYoutubeBottom({ url }: { url: string }) {
 	{
 		return (
@@ -115,6 +163,8 @@ function Daejangbu() {
 		<SubPageTemplate title="극단대장부">
 			<div className="flex flex-col gap-8 container-sub">
 				<Intro />
+				<Actor />
+				<Staff />
 				<History />
 			</div>
 		</SubPageTemplate>
