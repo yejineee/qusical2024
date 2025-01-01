@@ -9,8 +9,7 @@ export default {
 				primary: "var(--color-primary)",
 			},
 			fontFamily: {
-				sans: ["Pretendard", ...defaultTheme.fontFamily.sans],
-				title: ["행복고흥L"],
+				sans: ["Archivo", ...defaultTheme.fontFamily.sans],
 			},
 		},
 	},
