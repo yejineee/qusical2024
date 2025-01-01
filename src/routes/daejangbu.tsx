@@ -98,7 +98,11 @@ const History = () => (
 				file="q5.jpg"
 				youtubeURL="https://youtu.be/N75TlmEqhqs?si=VVJDTbz17Ja5FpJa"
 			/>
-			<HistoryBlock title="시즌6 ‘증인’ (2025년 1월)" file="q6.png" />
+			<HistoryBlock
+				title="시즌6 ‘유다’ (2025년 1월)"
+				file="q6.png"
+				youtubeURL="https://youtu.be/MXlcOGuQkFM?feature=shared"
+			/>
 		</ul>
 	</div>
 );
