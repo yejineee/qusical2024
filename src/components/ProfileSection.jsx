@@ -7,7 +7,7 @@ const ProfileSection = forwardRef(function ProfileSection(_, ref) {
 		<div ref={ref} className="relative flex flex-col items-center sm:pt-4">
 			<picture>
 				<source
-					srcSet={imageUrl({ file: "web_logo.png" })}
+					srcSet={imageUrl({ file: "web.png" })}
 					media="(min-width: 640px)"
 				/>
 				<Image
