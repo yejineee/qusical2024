@@ -11,7 +11,7 @@ const ProfileSection = forwardRef(function ProfileSection(_, ref) {
 					media="(min-width: 640px)"
 				/>
 				<Image
-					file="m_logo.png"
+					file="m_logo2.png"
 					className="sm:rounded-tr-3xl sm:rounded-tl-3xl"
 					high
 				/>
