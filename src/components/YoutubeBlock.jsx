@@ -6,7 +6,7 @@ function YoutubeBlock() {
 	return (
 		<BlockContainer>
 			<TitleSection />
-			<div className="my-4">
+			<div className="my-4 h-60 sm:h-72">
 				<iframe
 					width="100%"
 					height="100%"
