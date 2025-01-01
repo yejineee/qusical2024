@@ -21,7 +21,8 @@ const ProfileSection = forwardRef(function ProfileSection(_, ref) {
 			<div
 				className="absolute bottom-0 left-0 right-0 h-[70%]"
 				style={{
-					background: "linear-gradient(to bottom, transparent, #a0937d)",
+					background:
+						"linear-gradient(to bottom, transparent, var(--color-primary))",
 					pointerEvents: "none",
 				}}
 			/>

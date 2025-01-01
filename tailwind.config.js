@@ -6,7 +6,7 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				brown: "#54473F",
+				primary: "var(--color-primary)",
 			},
 			fontFamily: {
 				sans: ["Pretendard", ...defaultTheme.fontFamily.sans],
