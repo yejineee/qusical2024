@@ -8,7 +8,18 @@ const CheerLink = () => {
 	return (
 		<>
 			<LinkButton
-				className="font-semibold"
+				className="
+
+shadow-slate-500
+shadow-gray-900
+			hover:from-[#F0A8D0]
+			hover:via-[#FFFED3]
+			hover:to-[#BBE9FF]
+			from-[#E6A4B4]
+			via-[#FFFED3]
+			to-[#BED7DC]
+
+				font-semibold bg-gradient-to-r   from-10%   to-80%"
 				outerLink={LINK}
 				icon={
 					<Icon>
