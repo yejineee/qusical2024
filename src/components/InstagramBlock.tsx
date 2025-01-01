@@ -10,7 +10,7 @@ function InstagramBlock() {
 			<InstagramTitleSection />
 			<div className="grid grid-cols-2 my-4 gap-x-4 gap-y-4 grid-flow-dense">
 				{/* 1st */}
-				<GridImageItem className="rounded-br-xl" file="inst1.jpg" />
+				<GridImageItem className="rounded-br-xl" file="inst1_new.jpg" />
 				<GridImageItem className="rounded-bl-xl" file="inst2.jpg" />
 				{/* 2nd */}
 				<GridImageItem className="rounded-tl-xl" file="inst4.jpg" />
