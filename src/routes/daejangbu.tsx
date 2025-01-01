@@ -104,16 +104,7 @@ function HistoryBlock({
 			<div className="flex items-center">
 				<div className="text-lg font-semibold">{title}</div>
 			</div>
-			<div className="my-4">
-				{file && (
-					<Image
-						file={file}
-						alt={title}
-						fetchPriority={high ? "high" : "auto"}
-						loading={high ? "eager" : "lazy"}
-					/>
-				)}
-			</div>
+			<div className="my-4">{file && <Image file={file} alt={title} />}</div>
 			{youtubeURL && <HistoryYoutubeBottom url={youtubeURL} />}
 		</BlockContainer>
 	);
