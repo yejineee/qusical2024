@@ -8,16 +8,31 @@ const ProfileSection = forwardRef(function ProfileSection(_, ref) {
 			<picture>
 				<source
 					srcSet={imageUrl({ file: "web.png" })}
+					type="image/webp"
 					media="(min-width: 640px)"
 					height="145"
 					width="640"
 				/>
+				<source
+					srcSet="/image/web.png"
+					type="image/png"
+					media="(min-width: 640px)"
+					height="145"
+					width="640"
+				/>
+				<source
+					srcSet={imageUrl({ file: "m_logo2.png" })}
+					type="image/webp"
+					height="170"
+					width="640"
+				/>
 				<Image
 					file="m_logo2.png"
-					className="sm:rounded-tr-3xl sm:rounded-tl-3xl"
+					className="sm:rounded-tr-3xl sm:rounded-tl-3xl min-h-[175px] sm:min-h-[145px]"
 					high
-					height="180"
-					width="100%"
+					height="170"
+					width="640"
+					alt="배경 이미지"
 				/>
 			</picture>
 
