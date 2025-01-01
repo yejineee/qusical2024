@@ -1,5 +1,5 @@
-import SubPageHeader from "~/components/SubPageHeader";
 import { twMerge } from "tailwind-merge";
+import SubPageHeader from "~/components/SubPageHeader";
 interface Props {
 	title: string;
 	children: React.ReactNode;

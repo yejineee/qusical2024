@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
-import SubPageTemplate from "~/components/SubPageTemplate";
 import BlockContainer from "~/components/BlockContainer";
 import Image from "~/components/Image";
+import SubPageTemplate from "~/components/SubPageTemplate";
 
 export const Route = createFileRoute("/daejangbu")({
 	component: Daejangbu,

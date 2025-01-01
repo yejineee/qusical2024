@@ -1,10 +1,10 @@
-import IconLinkButton from "./IconLinkButton";
 import {
 	RiHome2Line,
 	RiInstagramLine,
 	RiKakaoTalkLine,
 	RiYoutubeLine,
 } from "react-icons/ri";
+import IconLinkButton from "./IconLinkButton";
 
 function LinkSection() {
 	return (

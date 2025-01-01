@@ -6,8 +6,8 @@ import LinkSection from "~/components/LinkSection";
 import MenuSection from "~/components/MenuSection";
 import ProfileSection from "~/components/ProfileSection";
 import Share from "~/components/Share";
-import YoutubeBlock from "~/components/YoutubeBlock";
 import Time from "~/components/Time";
+import YoutubeBlock from "~/components/YoutubeBlock";
 
 export const Route = createFileRoute("/")({
 	component: Home,

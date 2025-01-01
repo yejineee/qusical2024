@@ -9,8 +9,6 @@ const CheerLink = () => {
 		<>
 			<LinkButton
 				className="
-
-shadow-slate-500
 shadow-gray-900
 			hover:from-[#F0A8D0]
 			hover:via-[#FFFED3]

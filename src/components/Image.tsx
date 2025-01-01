@@ -1,4 +1,4 @@
-import { imageUrl, type ImageUrlType } from "~/utils/image";
+import { type ImageUrlType, imageUrl } from "~/utils/image";
 interface ImageProps
 	extends React.ImgHTMLAttributes<HTMLImageElement>,
 		ImageUrlType {
