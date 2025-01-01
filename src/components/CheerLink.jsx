@@ -5,6 +5,7 @@ import LinkButton from "./LinkButton";
 const CheerLink = () => {
 	return (
 		<LinkButton
+			className="font-semibold"
 			outerLink="https://rollingpaper.site/rolls/1074966"
 			icon={
 				<Icon>
