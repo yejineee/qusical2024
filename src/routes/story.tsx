@@ -7,7 +7,7 @@ export const Route = createFileRoute("/story")({
 
 function Story() {
 	return (
-		<SubPageTemplate title="줄거리" className="bg-primary">
+		<SubPageTemplate title="줄거리">
 			<div className="container-sub">
 				<BlockContainer className="text-lg break-keep">
 					어릴적부터 채색옷을 입으며 아버지의 편애 속에서 자란 요셉은 형제들의
