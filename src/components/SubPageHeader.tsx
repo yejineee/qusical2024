@@ -17,7 +17,7 @@ function SubPageHeader({ title }: { title?: string }) {
 				</button>
 				{title && (
 					<>
-						<div className="flex justify-center font-semibold text-md">
+						<div className="flex justify-center text-lg font-semibold">
 							{title}
 						</div>
 					</>

@@ -8,7 +8,7 @@ export const Route = createFileRoute("/contents")({
 });
 
 function Divider() {
-	return <hr className="w-6 border-[0.5px] opacity-50 border-stone-500" />;
+	return <hr className="w-6 border-[0.5px] opacity-50 border-primary" />;
 }
 
 const contents = [
@@ -23,12 +23,12 @@ function Contents() {
 	return (
 		<SubPageTemplate title="공연순서">
 			<div className="container-sub">
-				<div className="flex items-center gap-2 text-xs text-zinc-700">
+				<div className="flex items-center gap-2 text-zinc-700">
 					<RiInformation2Line />
 					구체적인 시간은 추후 업데이트될 예정입니다.
 				</div>
 				<div className="flex items-center justify-center w-full h-full pt-32">
-					<ul className="flex flex-col items-center gap-4 font-semibold">
+					<ul className="flex flex-col items-center gap-4 text-lg font-semibold">
 						{contents.map((content, index) => (
 							<>
 								{index !== 0 && <Divider />}

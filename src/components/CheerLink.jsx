@@ -12,7 +12,7 @@ const CheerLink = () => {
 				</Icon>
 			}
 		>
-			응원 보내기
+			응원하기
 		</LinkButton>
 	);
 };

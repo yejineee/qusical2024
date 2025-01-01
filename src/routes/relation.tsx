@@ -9,7 +9,9 @@ export const Route = createFileRoute("/relation")({
 function Relation() {
 	return (
 		<SubPageTemplate title="인물관계도">
-			<Image file="relation.png" alt="인물관계도" high />
+			<div className="flex w-full mx-auto">
+				<Image file="relation21.png" alt="인물관계도" high />
+			</div>
 		</SubPageTemplate>
 	);
 }

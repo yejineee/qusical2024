@@ -10,14 +10,17 @@ export const Route = createFileRoute("/daejangbu")({
 const Intro = () => (
 	<article>
 		<SubHeader>극단대장부</SubHeader>
-		<b>“너는 힘써 대장부가 되고”</b>
-		&nbsp;(열왕기상 2:2)
-		<br />
-		<br />
-		극단대장부는 큐지컬(QT+Musical)을 제작하는 우리들교회의 문화사역부서입니다.
-		<br />
-		<br />
-		우리부터 말씀으로 살아나고, 그 은혜를 관객들에게 전하고자 합니다.
+		<BlockContainer className="text-lg">
+			<b>“너는 힘써 대장부가 되고”</b>
+			&nbsp;(열왕기상 2:2)
+			<br />
+			<br />
+			극단대장부는 큐지컬(QT+Musical)을 제작하는 우리들교회의
+			문화사역부서입니다.
+			<br />
+			<br />
+			우리부터 말씀으로 살아나고, 그 은혜를 관객들에게 전하고자 합니다.
+		</BlockContainer>
 	</article>
 );
 
@@ -51,7 +54,7 @@ function HistoryBlock({
 	return (
 		<BlockContainer>
 			<div className="flex items-center">
-				<div className="font-semibold text-md">{title}</div>
+				<div className="text-lg font-semibold">{title}</div>
 			</div>
 			<div className="my-4">
 				{file && (
