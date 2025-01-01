@@ -9,11 +9,15 @@ const ProfileSection = forwardRef(function ProfileSection(_, ref) {
 				<source
 					srcSet={imageUrl({ file: "web.png" })}
 					media="(min-width: 640px)"
+					height="145"
+					width="640"
 				/>
 				<Image
 					file="m_logo2.png"
 					className="sm:rounded-tr-3xl sm:rounded-tl-3xl"
 					high
+					height="180"
+					width="100%"
 				/>
 			</picture>
 
