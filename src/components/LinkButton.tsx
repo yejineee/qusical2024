@@ -1,5 +1,4 @@
 import { twMerge } from "tailwind-merge";
-import { openNewTab } from "~/utils/web";
 
 interface Props {
 	children: React.ReactNode;
@@ -9,37 +8,35 @@ interface Props {
 }
 
 function LinkButton({ children, outerLink, icon, className }: Props) {
-	const onClick = () => {
-		if (outerLink) {
-			return openNewTab(outerLink);
-		}
-	};
-
 	if (icon) {
 		return (
-			<button
+			<a
 				className={twMerge(
 					"relative flex items-center justify-center w-full h-12 px-4 bg-white shadow-md rounded-2xl",
 					className,
 				)}
-				onClick={onClick}
+				href={outerLink}
+				target="_blank"
+				rel="noopener noreferrer"
 			>
 				<div className="absolute w-6 h-6 left-4">{icon}</div>
 				<div>{children}</div>
-			</button>
+			</a>
 		);
 	}
 
 	return (
-		<button
+		<a
 			className={twMerge(
 				"w-full h-12 bg-white shadow-md rounded-3xl",
 				className,
 			)}
-			onClick={onClick}
+			href={outerLink}
+			target="_blank"
+			rel="noopener noreferrer"
 		>
 			{children}
-		</button>
+		</a>
 	);
 }
 
