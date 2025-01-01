@@ -10,7 +10,7 @@ export const Route = createFileRoute("/daejangbu")({
 const Intro = () => (
 	<article>
 		<SubHeader>극단대장부</SubHeader>
-		<BlockContainer className="text-lg">
+		<BlockContainer className="text-lg break-keep">
 			<b>“너는 힘써 대장부가 되고”</b>
 			&nbsp;(열왕기상 2:2)
 			<br />
