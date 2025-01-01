@@ -15,7 +15,7 @@ shadow-gray-900
 			hover:from-[#F0A8D0]
 			hover:via-[#FFFED3]
 			hover:to-[#BBE9FF]
-			from-[#E6A4B4]
+			from-[#f0b9c6]
 			via-[#FFFED3]
 			to-[#BED7DC]
 
