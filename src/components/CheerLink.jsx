@@ -30,12 +30,12 @@ const CheerLink = () => {
 
 	return (
 		<>
-			<div className="fixed left-0 right-0 z-10 flex justify-end container-width bottom-4">
+			<div className="fixed left-0 right-0 z-10 flex justify-end sm:hidden container-width bottom-6">
 				<a
 					className={twJoin(
 						`
-				sm:hidden
-					mr-2
+				
+					mr-3
 					 max-w-32
 
 				from-[#F0A8D0]
