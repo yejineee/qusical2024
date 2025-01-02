@@ -44,7 +44,7 @@ const CheerLink = () => {
 			sm:px-6 sm:py-2
 			transition-opacity duration-100
 			
-			px-4 py-2 rounded-xl  font-semibold 
+			px-4 py-2 rounded-3xl  font-semibold 
 			bg-gradient-to-r   from-5% via-50%
 shadow-gray-900
 			shadow
