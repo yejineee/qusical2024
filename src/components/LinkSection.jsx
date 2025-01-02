@@ -8,7 +8,7 @@ import IconLinkButton from "./IconLinkButton";
 
 function LinkSection() {
 	return (
-		<div className="flex justify-center gap-8 sm:gap-20">
+		<div className="flex justify-center gap-8 sm:mb-12 sm:gap-20">
 			<IconLinkButton url="https://www.instagram.com/the.daejangbu/">
 				<RiInstagramLine size="28" color="white" />
 			</IconLinkButton>
