@@ -3,17 +3,15 @@ import BlockContainer from "~/components/BlockContainer";
 import Image from "~/components/Image";
 import SubPageTemplate from "~/components/SubPageTemplate";
 import { URL } from "~/constants";
-
+import ContentsBox from "~/components/ContentsBox";
 export const Route = createFileRoute("/daejangbu")({
 	component: Daejangbu,
 });
 
 const Intro = () => (
-	<article>
-		<SubHeader>극단대장부</SubHeader>
-		<BlockContainer className="text-lg break-keep">
-			<b>“너는 힘써 대장부가 되고”</b>
-			&nbsp;(열왕기상 2:2)
+	<ContentsBox title="극단대장부">
+		<ContentsBody>
+			“너는 힘써 대장부가 되고” &nbsp;(열왕기상 2:2)
 			<br />
 			<br />
 			극단대장부는 큐지컬(QT+Musical)을 제작하는 우리들교회의
@@ -21,8 +19,8 @@ const Intro = () => (
 			<br />
 			<br />
 			우리부터 말씀으로 살아나고, 그 은혜를 관객들에게 전하고자 합니다.
-		</BlockContainer>
-	</article>
+		</ContentsBody>
+	</ContentsBox>
 );
 
 const actor = {
@@ -34,12 +32,11 @@ const actor = {
 
 const Actor = () => {
 	return (
-		<article>
-			<SubHeader>큐지컬 {"<유다>"} 배우</SubHeader>
-			<BlockContainer className="text-lg break-keep">
+		<ContentsBox title={`큐지컬 <유다> 배우`}>
+			<ContentsBody>
 				<div>{actor.배우}</div>
-			</BlockContainer>
-		</article>
+			</ContentsBody>
+		</ContentsBox>
 	);
 };
 
@@ -59,17 +56,18 @@ const staff = {
 
 const Staff = () => {
 	return (
-		<article>
-			<SubHeader>큐지컬 {"<유다>"} 스태프</SubHeader>
-			<BlockContainer className="flex flex-col text-lg divide-y break-keep">
-				{Object.entries(staff).map(([role, names]) => (
-					<div key={role} className="grid grid-cols-4 p-1">
-						<b className="col-span-1">{role}</b>
-						<div className="col-start-2 col-span-full">{names}</div>
-					</div>
-				))}
-			</BlockContainer>
-		</article>
+		<ContentsBox title={`큐지컬 <유다> 스태프`}>
+			<ContentsBody>
+				<div className="flex flex-col divide-y">
+					{Object.entries(staff).map(([role, names]) => (
+						<div key={role} className="grid grid-cols-4 p-1">
+							<b className="col-span-1">{role}</b>
+							<div className="col-start-2 col-span-full">{names}</div>
+						</div>
+					))}
+				</div>
+			</ContentsBody>
+		</ContentsBox>
 	);
 };
 
@@ -160,4 +158,8 @@ function Daejangbu() {
 			</div>
 		</SubPageTemplate>
 	);
+}
+
+function ContentsBody({ children }: { children: React.ReactNode }) {
+	return <div className="my-4 text-lg break-keep">{children}</div>;
 }
