@@ -6,20 +6,22 @@ import {
 } from "react-icons/ri";
 import IconLinkButton from "./IconLinkButton";
 
+const SIZE = 32;
+
 function LinkSection() {
 	return (
 		<div className="flex justify-center gap-8 sm:mb-12 sm:gap-20">
 			<IconLinkButton url="https://www.instagram.com/the.daejangbu/">
-				<RiInstagramLine size="28" color="white" />
+				<RiInstagramLine size={SIZE} color="white" />
 			</IconLinkButton>
 			<IconLinkButton url="https://www.youtube.com/playlist?list=PLvn_5y4iSsmwTw6U4gEi532Ld7kj-Hc-W">
-				<RiYoutubeLine size="28" color="white" />
+				<RiYoutubeLine size={SIZE} color="white" />
 			</IconLinkButton>
 			<IconLinkButton url="https://woori.cc/">
-				<RiHome2Line size="28" color="white" />
+				<RiHome2Line size={SIZE} color="white" />
 			</IconLinkButton>
 			<IconLinkButton url="http://pf.kakao.com/_QuSBxj/friend">
-				<RiKakaoTalkLine size="28" color="white" />
+				<RiKakaoTalkLine size={SIZE} color="white" />
 			</IconLinkButton>
 		</div>
 	);
