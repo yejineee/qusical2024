@@ -1,13 +1,14 @@
 import { createFileRoute } from "@tanstack/react-router";
 import BlockContainer from "~/components/BlockContainer";
 import SubPageTemplate from "~/components/SubPageTemplate";
+import { URL } from "~/constants";
 export const Route = createFileRoute("/story")({
 	component: Story,
 });
 
 function Story() {
 	return (
-		<SubPageTemplate title="줄거리">
+		<SubPageTemplate title="줄거리" shareURL={URL.STORY}>
 			<div className="container-sub">
 				<BlockContainer className="text-lg break-keep">
 					어릴적부터 채색옷을 입으며 아버지의 편애 속에서 자란 요셉은 형제들의

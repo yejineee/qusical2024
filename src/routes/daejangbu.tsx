@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import BlockContainer from "~/components/BlockContainer";
 import Image from "~/components/Image";
 import SubPageTemplate from "~/components/SubPageTemplate";
+import { URL } from "~/constants";
 
 export const Route = createFileRoute("/daejangbu")({
 	component: Daejangbu,
@@ -92,7 +93,6 @@ function HistoryBlock({
 	title,
 	file,
 	youtubeURL,
-	high,
 }: {
 	title: string;
 	file?: string;
@@ -151,7 +151,7 @@ const History = () => (
 
 function Daejangbu() {
 	return (
-		<SubPageTemplate title="극단대장부">
+		<SubPageTemplate title="극단대장부" shareURL={URL.DAEJANGBU}>
 			<div className="flex flex-col gap-8 container-sub">
 				<Intro />
 				<Actor />

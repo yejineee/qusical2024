@@ -4,9 +4,10 @@ interface Props {
 	title: string;
 	children: React.ReactNode;
 	className?: string;
+	shareURL?: string;
 }
 
-function SubPageTemplate({ title, children, className }: Props) {
+function SubPageTemplate({ title, children, className, shareURL }: Props) {
 	return (
 		<div
 			style={{
@@ -14,7 +15,7 @@ function SubPageTemplate({ title, children, className }: Props) {
 			}}
 		>
 			<div className={twMerge("container-width container-height", className)}>
-				<SubPageHeader title={title} />
+				<SubPageHeader title={title} shareURL={shareURL} />
 				<div className="pt-12">{children}</div>
 			</div>
 		</div>

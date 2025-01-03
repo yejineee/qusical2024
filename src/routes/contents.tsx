@@ -2,10 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { RiExternalLinkLine } from "react-icons/ri";
 import { twMerge } from "tailwind-merge";
 import BlockContainer from "~/components/BlockContainer";
-import Icon from "~/components/Icon";
-import LinkButton from "~/components/LinkButton";
 import SubPageTemplate from "~/components/SubPageTemplate";
-
+import { URL } from "~/constants";
 export const Route = createFileRoute("/contents")({
 	component: Contents,
 });
@@ -27,7 +25,7 @@ const times = [
 
 function Contents() {
 	return (
-		<SubPageTemplate title="공연안내">
+		<SubPageTemplate title="공연안내" shareURL={URL.CONTENTS}>
 			<div className="container-sub">
 				<div className="flex flex-col gap-4 sm:gap-8">
 					<ContentsBox title="공연 장소 / 중계">
@@ -61,6 +59,14 @@ function Contents() {
 					<ContentsBox title="공연 순서">
 						<TextList textList={contents} />
 					</ContentsBox>
+					<ContentsBox title="안내">
+						<TextList
+							textList={[
+								"총 4회 무료공연입니다.",
+								"별도의 예약제를 운영하지 않습니다.",
+							]}
+						/>
+					</ContentsBox>
 				</div>
 			</div>
 		</SubPageTemplate>
@@ -71,11 +77,11 @@ function MapLink({ link }: { link: string }) {
 	return (
 		<a
 			href={link}
-			className="flex text-base underline"
+			className="flex text-base"
 			target="_blank"
 			rel="noopener noreferrer"
 		>
-			(지도
+			(<span className="underline">지도</span>
 			<span className="pt-1">
 				<RiExternalLinkLine />
 			</span>
