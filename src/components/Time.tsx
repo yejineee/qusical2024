@@ -15,7 +15,9 @@ function Time() {
 	return (
 		<BlockContainer>
 			<div className="flex items-center justify-between pb-2 border-b-2 border-b-stone-200 sm:text-lg">
-				<div className="font-semibold">공연 일정</div>
+				<div className="font-semibold">
+					큐지컬 {`<`}유다{`>`}
+				</div>
 				<div className="flex items-center text-sm sm:text-base">
 					<Icon className="w-4 mr-1 sm:w-[1.25rem]">
 						<RiMapPinLine />
