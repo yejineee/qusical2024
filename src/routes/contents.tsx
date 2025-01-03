@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { RiExternalLinkLine } from "react-icons/ri";
-import { twMerge } from "tailwind-merge";
-import BlockContainer from "~/components/BlockContainer";
+import TextList from "~/components/TextList";
+import ContentsBox from "~/components/ContentsBox";
 import SubPageTemplate from "~/components/SubPageTemplate";
 import { URL } from "~/constants";
 export const Route = createFileRoute("/contents")({
@@ -87,38 +87,5 @@ function MapLink({ link }: { link: string }) {
 			</span>
 			)
 		</a>
-	);
-}
-
-function TextList({
-	textList,
-	className,
-}: {
-	className?: string;
-	textList: React.ReactNode[];
-}) {
-	return (
-		<ul className={twMerge("flex flex-col w-full text-lg divide-y", className)}>
-			{textList.map((text) => (
-				<li className="flex justify-center py-2">{text}</li>
-			))}
-		</ul>
-	);
-}
-
-function ContentsBox({
-	title,
-	children,
-}: {
-	title: string;
-	children?: React.ReactNode;
-}) {
-	return (
-		<BlockContainer>
-			<div className="flex items-center justify-between pb-2 text-lg font-bold border-b-2 border-b-stone-200">
-				{title}
-			</div>
-			{children}
-		</BlockContainer>
 	);
 }
