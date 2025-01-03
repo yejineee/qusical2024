@@ -1,43 +1,118 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { RiInformation2Line } from "react-icons/ri";
+import { RiExternalLinkLine } from "react-icons/ri";
+import { twMerge } from "tailwind-merge";
+import BlockContainer from "~/components/BlockContainer";
 import Icon from "~/components/Icon";
+import LinkButton from "~/components/LinkButton";
 import SubPageTemplate from "~/components/SubPageTemplate";
 
 export const Route = createFileRoute("/contents")({
 	component: Contents,
 });
 
-function Divider() {
-	return <hr className="w-6 border-[0.5px] opacity-50 border-primary" />;
-}
+const MAP = {
+	판교: "https://naver.me/FBe2BAdI",
+	대구: "https://naver.me/5pwolRsq",
+	광주: "https://naver.me/5hucOMuL",
+};
 
-const contents = [
-	"찬양",
-	'큐지컬 "유다" 공연',
-	'"유다" 메시지',
-	"간증",
-	"기도",
+const contents = ["찬양", "큐지컬 공연", "메시지", "간증", "기도"];
+
+const times = [
+	"2025.01.08 (수) 오전 10시",
+	"2025.01.08 (수) 오후 7시 30분",
+	"2025.01.11 (토) 오전 11시",
+	"2025.01.11 (토) 오후 3시",
 ];
 
 function Contents() {
 	return (
-		<SubPageTemplate title="공연순서">
+		<SubPageTemplate title="공연안내">
 			<div className="container-sub">
-				<div className="flex items-center gap-2 text-zinc-700">
-					<RiInformation2Line />
-					구체적인 시간은 추후 업데이트될 예정입니다.
-				</div>
-				<div className="flex items-center justify-center w-full h-full pt-32">
-					<ul className="flex flex-col items-center gap-4 text-lg font-semibold">
-						{contents.map((content, index) => (
-							<>
-								{index !== 0 && <Divider />}
-								<li>{content}</li>
-							</>
-						))}
-					</ul>
+				<div className="flex flex-col gap-4 sm:gap-8">
+					<ContentsBox title="공연 장소 / 중계">
+						<TextList
+							textList={[
+								<div className="flex items-center">
+									우리들교회 판교채플 &nbsp;
+									<MapLink link={MAP.판교} />
+								</div>,
+								<>
+									중계:{" "}
+									<div className="flex items-center">
+										광주채플 &nbsp;
+										<MapLink link={MAP.광주} />,
+									</div>
+									&nbsp;
+									<div className="flex items-center">
+										대구채플 &nbsp;
+										<MapLink link={MAP.대구} />
+									</div>
+								</>,
+							]}
+						></TextList>
+					</ContentsBox>
+					<ContentsBox title="공연 시간">
+						<TextList textList={times} />
+					</ContentsBox>
+					<ContentsBox title="러닝타임">
+						<TextList textList={["2시간"]} />
+					</ContentsBox>
+					<ContentsBox title="공연 순서">
+						<TextList textList={contents} />
+					</ContentsBox>
 				</div>
 			</div>
 		</SubPageTemplate>
+	);
+}
+
+function MapLink({ link }: { link: string }) {
+	return (
+		<a
+			href={link}
+			className="flex text-base underline"
+			target="_blank"
+			rel="noopener noreferrer"
+		>
+			(지도
+			<span className="pt-1">
+				<RiExternalLinkLine />
+			</span>
+			)
+		</a>
+	);
+}
+
+function TextList({
+	textList,
+	className,
+}: {
+	className?: string;
+	textList: React.ReactNode[];
+}) {
+	return (
+		<ul className={twMerge("flex flex-col w-full text-lg divide-y", className)}>
+			{textList.map((text) => (
+				<li className="flex justify-center py-2">{text}</li>
+			))}
+		</ul>
+	);
+}
+
+function ContentsBox({
+	title,
+	children,
+}: {
+	title: string;
+	children?: React.ReactNode;
+}) {
+	return (
+		<BlockContainer>
+			<div className="flex items-center justify-between pb-2 text-lg font-bold border-b-2 border-b-stone-200">
+				{title}
+			</div>
+			{children}
+		</BlockContainer>
 	);
 }

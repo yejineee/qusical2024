@@ -1,5 +1,5 @@
 import { Link, type LinkProps } from "@tanstack/react-router";
-import { SlDiamond, SlList, SlMusicToneAlt, SlPeople } from "react-icons/sl";
+import { SlDiamond, SlInfo, SlMusicToneAlt, SlPeople } from "react-icons/sl";
 import { ICON_COLOR } from "./Icon";
 
 import BlockContainer from "./BlockContainer";
@@ -37,8 +37,8 @@ function MenuSection() {
 			<Menu to="/relation" icon={<SlPeople size="24" color={ICON_COLOR} />}>
 				인물관계도
 			</Menu>
-			<Menu to="/contents" icon={<SlList size="24" color={ICON_COLOR} />}>
-				공연 순서
+			<Menu to="/contents" icon={<SlInfo size="24" color={ICON_COLOR} />}>
+				공연안내
 			</Menu>
 			<Menu to="/daejangbu" icon={<SlDiamond size="24" color={ICON_COLOR} />}>
 				극단대장부
