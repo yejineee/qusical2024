@@ -45,7 +45,8 @@ const Actor = () => {
 const staff = {
 	사역자: "김오석 김평화",
 	연출: "이경두",
-	본부: "김용희 박하진 박혜령",
+	본부: "김용희 박하진",
+	작가: "서나은 박혜령",
 	운영: "송기호 심영보 맹우진 성기현",
 	안무: "신은정 문희준 김재우",
 	의상: "송다인 유서연 신은수 변예린",
@@ -154,7 +155,7 @@ function Daejangbu() {
 			<div className="flex flex-col gap-8 container-sub">
 				<Intro />
 				<Actor />
-				{/* <Staff /> */}
+				<Staff />
 				<History />
 			</div>
 		</SubPageTemplate>
