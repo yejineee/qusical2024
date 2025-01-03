@@ -6,6 +6,11 @@ function SubPageHeader({ title }: { title?: string }) {
 	const router = useRouter();
 
 	const handleClickBack = () => {
+		console.log(router.history.length);
+		if (router.history.length <= 1) {
+			return router.navigate({ to: "/" });
+		}
+
 		router.history.back();
 	};
 
