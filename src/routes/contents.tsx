@@ -77,11 +77,11 @@ function MapLink({ link }: { link: string }) {
 	return (
 		<a
 			href={link}
-			className="flex text-base underline"
+			className="flex text-base"
 			target="_blank"
 			rel="noopener noreferrer"
 		>
-			(지도
+			(<span className="underline">지도</span>
 			<span className="pt-1">
 				<RiExternalLinkLine />
 			</span>
