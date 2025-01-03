@@ -30,11 +30,13 @@ function SubPageHeader({
 					</div>
 				)}
 				{!!shareURL && (
-					<BaseShare
-						className="flex items-center justify-end"
-						url={shareURL}
-						iconSize={ICON_SIZE}
-					/>
+					<div className="flex items-center justify-end">
+						<BaseShare
+							className="p-2 rounded-full bg-opacity-10 bg-neutral-300"
+							url={shareURL}
+							iconSize={ICON_SIZE}
+						/>
+					</div>
 				)}
 			</div>
 		</>
