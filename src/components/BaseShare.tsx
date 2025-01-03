@@ -6,11 +6,13 @@ interface Props {
 	url: string;
 	className?: string;
 	iconColor?: string;
+	iconSize?: number;
 }
 export default function Share({
 	title = URL_TITLE,
 	url,
 	iconColor = "black",
+	iconSize,
 	className,
 }: Props) {
 	const handleClick = () => {
@@ -23,7 +25,7 @@ export default function Share({
 
 	return (
 		<button onClick={handleClick} className={className}>
-			<RiShare2Line color={iconColor} />
+			<RiShare2Line color={iconColor} size={iconSize} />
 		</button>
 	);
 }

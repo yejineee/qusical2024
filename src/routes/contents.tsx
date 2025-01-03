@@ -2,10 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { RiExternalLinkLine } from "react-icons/ri";
 import { twMerge } from "tailwind-merge";
 import BlockContainer from "~/components/BlockContainer";
-import Icon from "~/components/Icon";
-import LinkButton from "~/components/LinkButton";
 import SubPageTemplate from "~/components/SubPageTemplate";
-
+import { URL } from "~/constants";
 export const Route = createFileRoute("/contents")({
 	component: Contents,
 });
@@ -27,7 +25,7 @@ const times = [
 
 function Contents() {
 	return (
-		<SubPageTemplate title="공연안내">
+		<SubPageTemplate title="공연안내" shareURL={URL.CONTENTS}>
 			<div className="container-sub">
 				<div className="flex flex-col gap-4 sm:gap-8">
 					<ContentsBox title="공연 장소 / 중계">
