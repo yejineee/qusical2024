@@ -10,7 +10,7 @@ export const Route = createFileRoute("/relation")({
 function Relation() {
 	return (
 		<SubPageTemplate title="인물관계도" shareURL={URL.RELATION}>
-			<div className="flex w-full mx-auto">
+			<div className="flex w-full mx-auto mt-4">
 				<Image file="relation21.png" alt="인물관계도" high />
 			</div>
 		</SubPageTemplate>
