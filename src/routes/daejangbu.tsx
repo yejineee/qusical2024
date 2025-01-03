@@ -60,7 +60,7 @@ const Staff = () => {
 	return (
 		<article>
 			<SubHeader>큐지컬 {"<유다>"} 스태프</SubHeader>
-			<BlockContainer className="flex flex-col gap-1 text-lg divide-y break-keep">
+			<BlockContainer className="flex flex-col text-lg divide-y break-keep">
 				{Object.entries(staff).map(([role, names]) => (
 					<div key={role} className="grid grid-cols-4 p-1">
 						<b className="col-span-1">{role}</b>
