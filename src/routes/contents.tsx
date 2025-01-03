@@ -61,6 +61,14 @@ function Contents() {
 					<ContentsBox title="공연 순서">
 						<TextList textList={contents} />
 					</ContentsBox>
+					<ContentsBox title="안내">
+						<TextList
+							textList={[
+								"총 4회 무료공연입니다.",
+								"별도의 예약제를 운영하지 않습니다.",
+							]}
+						/>
+					</ContentsBox>
 				</div>
 			</div>
 		</SubPageTemplate>
