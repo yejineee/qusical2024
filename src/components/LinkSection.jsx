@@ -20,7 +20,7 @@ function LinkSection() {
 			<IconLinkButton url="https://woori.cc/">
 				<RiHome2Line size={SIZE} color="white" />
 			</IconLinkButton>
-			<IconLinkButton url="http://pf.kakao.com/_QuSBxj/friend">
+			<IconLinkButton url="http://pf.kakao.com/_QuSBxj/">
 				<RiKakaoTalkLine size={SIZE} color="white" />
 			</IconLinkButton>
 		</div>
