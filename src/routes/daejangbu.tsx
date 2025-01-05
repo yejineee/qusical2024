@@ -1,9 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
 import BlockContainer from "~/components/BlockContainer";
+import ContentsBox from "~/components/ContentsBox";
 import Image from "~/components/Image";
 import SubPageTemplate from "~/components/SubPageTemplate";
 import { URL } from "~/constants";
-import ContentsBox from "~/components/ContentsBox";
 export const Route = createFileRoute("/daejangbu")({
 	component: Daejangbu,
 });
@@ -42,8 +42,7 @@ const Actor = () => {
 
 const staff = {
 	사역자: "김오석 김평화",
-	연출: "이경두",
-	본부: "김용희 박하진",
+	본부: "김용희 박하진 이경두",
 	작가: "서나은 박혜령",
 	운영: "송기호 심영보 맹우진 성기현",
 	안무: "신은정 문희준 김재우",
