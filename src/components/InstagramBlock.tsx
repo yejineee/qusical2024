@@ -8,13 +8,34 @@ function InstagramBlock() {
 	return (
 		<BlockContainer>
 			<InstagramTitleSection />
-			<div className="grid grid-cols-2 my-4 gap-x-4 gap-y-4 grid-flow-dense">
-				{/* 1st */}
-				<GridImageItem className="rounded-br-xl" file="inst1_new.jpg" />
-				<GridImageItem className="rounded-bl-xl" file="inst2.jpg" />
-				{/* 2nd */}
-				<GridImageItem className="rounded-tl-xl" file="inst4.jpg" />
+			{/* Mobile Layout */}
+			<div className="grid grid-cols-3 grid-rows-3 my-4 gap-2 md:hidden">
+				{/* Large image spanning 2 rows and 2 columns */}
+				<GridImageItem className="row-span-2 col-span-2 rounded-tl-xl rounded-bl-xl" file="inst1_new.jpg" />
+				{/* Top right small image */}
+				<GridImageItem className="rounded-tr-xl" file="inst2.jpg" />
+				{/* Middle right small image */}
+				<GridImageItem file="inst3.jpg" />
+				{/* Bottom row */}
+				<GridImageItem file="inst4.jpg" />
+				<GridImageItem file="inst2.jpg" />
+				<GridImageItem className="rounded-br-xl" file="inst3.jpg" />
+			</div>
+			
+			{/* Desktop Layout */}
+			<div className="hidden md:grid grid-cols-3 my-4 gap-x-2 gap-y-2">
+				{/* 1st row */}
+				<GridImageItem className="rounded-tl-xl" file="inst1_new.jpg" />
+				<GridImageItem file="inst2.jpg" />
 				<GridImageItem className="rounded-tr-xl" file="inst3.jpg" />
+				{/* 2nd row */}
+				<GridImageItem file="inst4.jpg" />
+				<GridImageItem file="inst1_new.jpg" />
+				<GridImageItem file="inst2.jpg" />
+				{/* 3rd row */}
+				<GridImageItem className="rounded-bl-xl" file="inst3.jpg" />
+				<GridImageItem file="inst4.jpg" />
+				<GridImageItem className="rounded-br-xl" file="inst1_new.jpg" />
 			</div>
 			<InstagramBottomSection />
 		</BlockContainer>
