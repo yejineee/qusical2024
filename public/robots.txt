@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://qusical2024.vercel.app/sitemap.txt
+Sitemap: https://qusical2025.vercel.app/sitemap.txt
