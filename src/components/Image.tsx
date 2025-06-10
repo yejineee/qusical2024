@@ -12,6 +12,7 @@ function Image({ file, quality = 70, size, high, ...props }: ImageProps) {
 			src={src}
 			fetchPriority={high ? "high" : "auto"}
 			loading={high ? "eager" : "lazy"}
+			alt="극단대장부 이미지"
 			{...props}
 		></img>
 	);
