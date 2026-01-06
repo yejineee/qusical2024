@@ -3,6 +3,7 @@ import { twMerge } from "tailwind-merge";
 import BlockContainer from "./BlockContainer";
 import Icon, { ICON_COLOR } from "./Icon";
 import Image from "./Image";
+import {INSTAGRAM} from '../constants';
 
 function InstagramBlock() {
 	return (
@@ -40,11 +41,11 @@ function InstagramBottomSection() {
 			<div className="flex items-center justify-between w-full">
 				<div>
 					<span className="font-serif">@</span>
-					the.daejangbu
+					{INSTAGRAM.id}
 				</div>
 				<a
 					className="px-4 py-3 font-semibold text-neutral-100 rounded-3xl bg-stone-800 min-w-[48px]"
-					href="https://www.instagram.com/the.daejangbu/"
+					href={INSTAGRAM.url}
 					target="_blank"
 				>
 					Follow

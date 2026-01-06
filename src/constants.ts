@@ -7,3 +7,8 @@ export const URL = {
 };
 
 export const URL_TITLE = "2025 큐지컬 - 유다";
+
+export const INSTAGRAM = {
+	url: 'https://www.instagram.com/daejangbu_qusical/',
+	id: 'daejangbu_qusical'
+}

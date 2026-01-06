@@ -5,13 +5,14 @@ import {
 	RiYoutubeLine,
 } from "react-icons/ri";
 import IconLinkButton from "./IconLinkButton";
+import {INSTAGRAM} from '../constants';
 
 const SIZE = 32;
 
 function LinkSection() {
 	return (
 		<div className="flex justify-center gap-8 sm:mb-12 sm:gap-20">
-			<IconLinkButton url="https://www.instagram.com/the.daejangbu/">
+			<IconLinkButton url={INSTAGRAM.url}>
 				<RiInstagramLine size={SIZE} color="white" />
 			</IconLinkButton>
 			<IconLinkButton url="https://www.youtube.com/playlist?list=PLvn_5y4iSsmwTw6U4gEi532Ld7kj-Hc-W">
